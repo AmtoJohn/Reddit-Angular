@@ -1,0 +1,15 @@
+<form>
+  <div>
+    <label for="title">Cosa inutili:</label>
+    <input name="title" #newtitle>
+  </div>
+  <div>
+    <label for="spam">Spam:</label>
+    <input name="spam" #newspam>
+  </div>
+  <div>
+    <button (click)="submitSpam(newtitle, newspam)">
+      Submit spam
+    </button>
+  </div>
+</form>
