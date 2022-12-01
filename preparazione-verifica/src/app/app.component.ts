@@ -8,8 +8,8 @@ import { Component } from '@angular/core';
 
 export class AppComponent {
   [x: string]: any;
-  submitSpam(title: HTMLInputElement, spam: HTMLInputElement): boolean {
-    console.log(`Spam submitted: ${title.value} and link: ${spam.value}`);
+  submitSpam(usless: HTMLInputElement, spam: HTMLInputElement): boolean {
+    console.log(`Spam submitted: ${usless.value} and link: ${spam.value}`);
   return false;
   }
 }
