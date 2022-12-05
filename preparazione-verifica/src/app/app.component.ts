@@ -7,10 +7,15 @@ import { Component } from '@angular/core';
 })
 
 export class AppComponent {
-  [x: string]: any;
-  submitSpam(usless: HTMLInputElement, spam: HTMLInputElement): boolean {
-    console.log(`Spam submitted: ${usless.value} and link: ${spam.value}`);
-  return false;
+  articles = new Array<string>(); //Dichiaro un array di stringhe
+  submitSpam(usless: HTMLInputElement, num: HTMLInputElement): boolean {
+    console.log(`spamText: ${usless.value} and spamNum: ${num.value}`); //Questa notazione permette di inserire il contenuto di variabili dentro a stringhe (usare ALT + 96 per le virgolette)
+    let cont = Number(num.value); // Converte stringhe in numeri
+    return false;
+    for(let i:number =0; i< cont; i++)  //Ciclo For in typescript
+ {
+      //Qualcosa
+ }
   }
 }
 //Per fare il simbolo ` premere ALT + 96 del tastierino numerico
